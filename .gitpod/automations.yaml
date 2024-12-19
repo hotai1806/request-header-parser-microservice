@@ -1,10 +1,13 @@
-image: gitpod/workspace-full
-
 tasks:
-  - init: npm install
-    command: npm start
+  setup-app:
+    name: Install Dependencies
+    init: npm install # Runs during workspace initialization
+    command: echo "Dependencies installed"
+
+  start-app:
+    name: Start Application
+    command: npm start # Start the application
 
 ports:
   - port: 8000
     onOpen: open-preview
-    visibility: public
