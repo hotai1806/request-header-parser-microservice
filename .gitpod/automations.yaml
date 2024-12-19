@@ -8,7 +8,7 @@ tasks:
       - postDevcontainerStart
   start-app:
     name: Start Application
-    command: npm start # Start the application
+    command: npm start &
     triggeredBy:
       # postEnvironmentStart activates every time the environment is started, e.g. on first start
       # - postEnvironmentStart
