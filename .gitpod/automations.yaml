@@ -5,15 +5,15 @@ tasks:
     command: npm install
     triggeredBy:
       # postEnvironmentStart activates every time the environment is started, e.g. on first start
-      - postEnvironmentStart
+      - postDevcontainerStart
   start-app:
     name: Start Application
     command: npm start # Start the application
     triggeredBy:
       # postEnvironmentStart activates every time the environment is started, e.g. on first start
-      - postEnvironmentStart
+      # - postEnvironmentStart
       # postEnvironmentStart activates every time the devcontainer is started, e.g. on first start or devcontainer rebuild
-      # - postDevcontainerStart
+      - postDevcontainerStart
     # dependsOn expresses a dependency on another task which ensures that this other task runs before this one.
     dependsOn:
       - setup-app
