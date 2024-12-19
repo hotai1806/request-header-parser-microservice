@@ -7,7 +7,3 @@ tasks:
   start-app:
     name: Start Application
     command: npm start # Start the application
-
-ports:
-  - port: 8000
-    onOpen: open-preview
