@@ -1,0 +1,8 @@
+tasks:
+  setup-app:
+    name: Build All
+    description: builds all code
+    command: npm install
+  start-app:
+    name: Start Application
+    command: npm start # Start the application

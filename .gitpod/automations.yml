@@ -1,9 +1,0 @@
-tasks:
-  setup-app:
-    name: Install Dependencies
-    init: npm install # Runs during workspace initialization
-    command: echo "Dependencies installed"
-
-  start-app:
-    name: Start Application
-    command: npm start # Start the application
